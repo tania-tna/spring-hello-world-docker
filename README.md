@@ -1,41 +1,51 @@
-Spring Boot Hello World
-A simple Spring Boot 2.x app to send hello world message to a user
+# Spring Boot Hello World
 
-How to Run Application
-Start the application using any of the commands mentioned below
+**A simple Spring Boot 2.x app to send hello world message to a user**
 
-Note: First two commands need to run inside the root folder of this project i.e inside the spring-boot-hello-world folder
+## How to Run Application
 
-Using maven
- mvn spring-boot:run
+**Start the application using any of the commands mentioned below**
 
-From jar file Create a jar file using 'mvn clean install' command and then execute
-java -jar target/spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar
-
-Directly from IDE
-Right click on HelloWorldApplication.java and click on 'Run' option
+> **Note:** First two commands need to run inside the root folder of this project i.e inside the **spring-boot-hello-world** folder
 
 
-Note: By default spring boot application starts on port number 8080. If port 8080 is occupied in your system then you can change the port number by uncommenting and updating the server.port property inside the application.properties file that is available inside the src > main > resources folder.
+- **Using maven** <br/>``` mvn spring-boot:run```
 
 
-Send an HTTP GET request to '/hello' endpoint using any of the two methods
+- **From jar file**
+  Create a jar file using '**mvn clean install**' command and then execute
+  <br/>```java -jar target/spring-boot-2-hello-world-1.0.2-SNAPSHOT.jar```
 
-Browser or REST client
-http://localhost:8080/hello
 
-cURL
-curl --request GET 'http://localhost:8080/hello'
+- **Directly from IDE**
+  <br/>```Right click on HelloWorldApplication.java and click on 'Run' option```
+  <br/><br/>
 
-How to Run Unit Test Cases
-Run the test cases using any of the commands mentioned below
+> **Note:** By default spring boot application starts on port number 8080. If port 8080 is occupied in your system then you can change the port number by uncommenting and updating the **server.port** property inside the **application.properties** file that is available inside the **src > main > resources** folder.
 
-Note: These commands need to run inside the root folder of this project i.e inside the spring-boot-hello-world folder
+<br/>
 
-To run all the test cases
-mvn test
+**Send an HTTP GET request to '/hello' endpoint using any of the two methods**
 
-To run a particular test class
-mvn -Dtest=HelloWorldControllerTest test
-or
-mvn -Dtest=HelloWorldApplicationTests test
+- **Browser or REST client**
+  <br/>```http://localhost:8080/hello```
+
+
+- **cURL**
+  <br/>```curl --request GET 'http://localhost:8080/hello'```
+
+
+## How to Run Unit Test Cases
+
+**Run the test cases using any of the commands mentioned below**
+
+> **Note:** These commands need to run inside the root folder of this project i.e inside the **spring-boot-hello-world** folder
+
+- **To run all the test cases**
+  <br/>```mvn test```
+
+
+- **To run a particular test class**
+  <br/>```mvn -Dtest=HelloWorldControllerTest test```
+  <br/>or
+  <br/>```mvn -Dtest=HelloWorldApplicationTests test```
